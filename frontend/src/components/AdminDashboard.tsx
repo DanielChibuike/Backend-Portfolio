@@ -23,6 +23,7 @@ function AdminDashboard() {
           <button onClick={() => setPage("messages")}>Messages</button>
           <button onClick={() => setPage("projects")}>Create Project</button>
           <button onClick={() => setPage("manage-projects")}>Projects</button>
+          <button onClick={() => navigate("/")}>View Portfolio</button>
           <button onClick={logout}>Logout</button>
         </div>
       </nav>
