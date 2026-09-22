@@ -1,0 +1,49 @@
+.create-project {
+  max-width: 700px;
+  padding: 60px 6%;
+}
+
+.create-project > p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #666;
+}
+
+.create-project h2 {
+  margin-bottom: 32px;
+  font-size: 42px;
+}
+
+.create-project form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.create-project input,
+.create-project textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  font: inherit;
+}
+
+.create-project textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-project button {
+  width: fit-content;
+  padding: 12px 20px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create-project button:hover {
+  background: #fff;
+  color: #111;
+}

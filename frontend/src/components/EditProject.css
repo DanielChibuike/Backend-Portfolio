@@ -1,0 +1,74 @@
+.edit-project {
+  max-width: 700px;
+  margin-top: 60px;
+  padding: 50px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.edit-project > p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #666;
+}
+
+.edit-project h2 {
+  margin-bottom: 32px;
+  font-size: 42px;
+  color: #111;
+}
+
+.edit-project form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.edit-project input,
+.edit-project textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #111;
+  font: inherit;
+}
+
+.edit-project input:focus,
+.edit-project textarea:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.edit-project textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.edit-project button {
+  width: fit-content;
+  padding: 12px 20px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-project button:hover {
+  background: #fff;
+  color: #111;
+}
+
+.edit-project button[type="button"] {
+  background: #fff;
+  color: #111;
+}
+
+.edit-project button[type="button"]:hover {
+  background: #111;
+  color: #fff;
+}
+
+.edit-project form > p {
+  color: #666;
+}

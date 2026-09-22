@@ -1,0 +1,34 @@
+.admin {
+  min-height: 100vh;
+  background: #f7f7f5;
+}
+
+.admin-nav {
+  padding: 24px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.admin-nav h2 {
+  font-size: 20px;
+}
+
+.admin-nav div {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-nav button {
+  padding: 10px 14px;
+  border: 1px solid #111;
+  background: transparent;
+  cursor: pointer;
+}
+
+.admin-nav button:hover {
+  background: #111;
+  color: #fff;
+}

@@ -1,0 +1,75 @@
+#experience {
+  padding: 120px 6%;
+  border-top: 1px solid #e5e5e5;
+}
+
+#experience > p {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #666666;
+}
+
+#experience h2 {
+  max-width: 700px;
+  margin-bottom: 70px;
+  font-size: 48px;
+  line-height: 1;
+  color: #111111;
+}
+
+.experience-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #e5e5e5;
+}
+
+.experience-stats > div {
+  padding: 32px 24px 32px 0;
+  border-right: 1px solid #e5e5e5;
+}
+
+.experience-stats > div:not(:first-child) {
+  padding-left: 24px;
+}
+
+.experience-stats > div:last-child {
+  border-right: none;
+}
+
+.experience-stats h3 {
+  margin-bottom: 12px;
+  font-size: 52px;
+  color: #111111;
+}
+
+.experience-stats p {
+  color: #666666;
+}
+
+@media (max-width: 700px) {
+  #experience {
+    padding: 80px 5%;
+  }
+
+  #experience h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .experience-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-stats > div,
+  .experience-stats > div:not(:first-child) {
+    padding: 24px 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .experience-stats > div:last-child {
+    border-bottom: none;
+  }
+}

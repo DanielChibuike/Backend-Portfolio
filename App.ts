@@ -1,5 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config();
+const cors = require("cors");
 
 const express = require("express");
 import type { Request, Response } from "express";
@@ -15,6 +16,8 @@ app.use(express.json());//middleware to parse JSON request bodies
 app.get("/", (req: Request, res: Response) => {
   res.send("Portfolio API is running");
 });
+
+app.use(cors());
 
 //routes
 const messageRoute = require("./Route/MessageRoute");
@@ -39,7 +42,7 @@ connectDB();//connect to the database
 
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3700;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

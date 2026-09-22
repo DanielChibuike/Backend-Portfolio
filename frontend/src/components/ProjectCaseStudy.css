@@ -1,0 +1,60 @@
+.case-study {
+  margin-top: 80px;
+  padding: 80px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.case-study > p:first-child {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #666666;
+}
+
+.case-study h2 {
+  margin-bottom: 60px;
+  font-size: 48px;
+  color: #111111;
+}
+
+.case-study h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #111111;
+}
+
+.case-study > p,
+.case-study li {
+  color: #666666;
+  line-height: 1.7;
+}
+
+.case-study > p {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.case-study ul {
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.case-study li {
+  margin-bottom: 8px;
+}
+.case-study button,
+#work button {
+  padding: 12px 20px;
+  border: 1px solid #111111;
+  background: #111111;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.case-study button:hover,
+#work button:hover {
+  background: #ffffff;
+  color: #111111;
+}

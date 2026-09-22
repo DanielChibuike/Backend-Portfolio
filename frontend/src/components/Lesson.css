@@ -1,0 +1,47 @@
+#learning {
+  padding: 120px 6%;
+  border-top: 1px solid #e5e5e5;
+}
+
+#learning > p {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #666666;
+}
+
+#learning h2 {
+  max-width: 700px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 1;
+  color: #111111;
+}
+
+.learning-list {
+  max-width: 800px;
+}
+
+.learning-list p {
+  padding: 24px 0;
+  border-top: 1px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+@media (max-width: 700px) {
+  #learning {
+    padding: 80px 5%;
+  }
+
+  #learning h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .learning-list p {
+    font-size: 16px;
+  }
+}

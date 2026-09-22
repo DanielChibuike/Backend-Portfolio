@@ -109,9 +109,9 @@ const updateProjectById = async (req:Request, res:Response) => {
     try {
         const {id} = req.params;
     
-        const {title, description} = req.body;
+        const {title, description,image,technologies,problemSolved,features,challanges,whatIlearned,liveDemoUrl} = req.body;
         const updateproject = await Project.findByIdAndUpdate(id,
-            {title, description},
+            {title, description,image,technologies,problemSolved,features,challanges,whatIlearned,liveDemoUrl},
 
             {new: true, runValidators: true}
         );

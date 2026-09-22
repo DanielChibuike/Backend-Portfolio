@@ -1,0 +1,126 @@
+
+.messages {
+  min-height: 100vh;
+  padding: 60px 6%;
+  background: #f7f7f5;
+  color: #111111;
+}
+
+.messages-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.messages-header p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #666666;
+}
+
+.messages-header h2 {
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.messages-header button {
+  padding: 12px 20px;
+  border: 1px solid #111111;
+  background: #111111;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.messages-header button:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+.messages > article {
+  max-width: 900px;
+  padding: 28px 0;
+  border-top: 1px solid #ddddda;
+}
+
+.messages > article > p:first-child {
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777777;
+}
+
+.messages article h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.messages article p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.messages article small {
+  display: block;
+  margin-bottom: 20px;
+  color: #888888;
+}
+
+.messages article div {
+  display: flex;
+  gap: 10px;
+}
+
+.messages article button {
+  padding: 10px 16px;
+  border: 1px solid #111111;
+  background: transparent;
+  color: #111111;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.messages article button:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+.messages > p {
+  color: #666666;
+}
+
+@media (max-width: 700px) {
+  .messages {
+    padding: 40px 5%;
+  }
+
+  .messages-header {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .messages-header h2 {
+    font-size: 38px;
+  }
+
+  .messages-header button {
+    align-self: flex-start;
+  }
+
+  .messages > article {
+    padding: 24px 0;
+  }
+
+  .messages article div {
+    flex-wrap: wrap;
+  }
+}
