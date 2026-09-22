@@ -41,7 +41,7 @@ function CreateProject() {
 
     try {
       const response = await fetch(
-        "http://localhost:3700/api/projects/createproject",
+        "https://backend-portfolio-i9c4.onrender.com/api/projects/createproject",
         {
           method: "POST",
           headers: {

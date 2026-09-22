@@ -12,7 +12,7 @@ function ProjectManager() {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3700/api/projects/getall"
+          "https://backend-portfolio-i9c4.onrender.com/api/projects/getall"
         );
 
         const data = await response.json();
@@ -35,7 +35,7 @@ function ProjectManager() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:3700/api/projects/deleteproject/${id}`,
+      `https://backend-portfolio-i9c4.onrender.com/api/projects/deleteproject/${id}`,
       {
         method: "DELETE",
         headers: {

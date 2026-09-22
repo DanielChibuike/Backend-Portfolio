@@ -21,7 +21,7 @@ function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3700/api/messages", {
+    const response = await fetch("https://backend-portfolio-i9c4.onrender.com/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

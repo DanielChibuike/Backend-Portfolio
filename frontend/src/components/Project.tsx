@@ -8,7 +8,7 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3700/api/projects/getall")
+    fetch("https://backend-portfolio-i9c4.onrender.com/api/projects/getall")
       .then((res) => res.json())
       .then((data) => setProjects(data.projects));
   }, []);

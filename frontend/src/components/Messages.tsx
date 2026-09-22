@@ -24,7 +24,7 @@ function Messages() {
 
       try {
         const response = await fetch(
-          "http://localhost:3700/api/messages",
+          "https://backend-portfolio-i9c4.onrender.com/api/messages",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ function Messages() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:3700/api/messages/${id}`,
+      `https://backend-portfolio-i9c4.onrender.com/api/messages/${id}`,
       {
         method: "PATCH",
         headers: {
@@ -74,7 +74,7 @@ function Messages() {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `http://localhost:3700/api/messages/${id}`,
+      `https://backend-portfolio-i9c4.onrender.com/api/messages/${id}`,
       {
         method: "DELETE",
         headers: {

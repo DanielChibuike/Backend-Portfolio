@@ -47,7 +47,7 @@ function EditProject({ project, onUpdated, onCancel }: Props) {
 
     try {
       const response = await fetch(
-        `http://localhost:3700/api/projects/updateproject/${project._id}`,
+        `https://backend-portfolio-i9c4.onrender.com/api/projects/updateproject/${project._id}`,
         {
           method: "PATCH",
           headers: {
@@ -66,7 +66,7 @@ function EditProject({ project, onUpdated, onCancel }: Props) {
       }
 
       setMessage("Project updated successfully.");
-      onUpdated(data.updateProject);
+      onUpdated(data.updateproject);
     } catch {
       setMessage("Unable to connect to the server.");
     }
