@@ -192,3 +192,69 @@
     transform: none;
   }
 }
+
+
+
+
+/* Project action buttons and links */
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+#work article .project-live-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 13px 19px;
+  border: 1px solid #d8c9f5;
+  border-radius: 12px;
+  background: #fff;
+  color: #7955c8;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+#work article .project-live-link:hover {
+  transform: translateY(-2px);
+  border-color: #7955c8;
+  background: #f4efff;
+}
+
+#work article .project-live-link:focus-visible {
+  outline: 3px solid #c7b5f0;
+  outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .project-actions {
+    gap: 10px;
+  }
+
+  .project-actions button,
+  #work article .project-live-link {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #work article .project-live-link {
+    transition: none;
+  }
+
+  #work article .project-live-link:hover {
+    transform: none;
+  }
+}
