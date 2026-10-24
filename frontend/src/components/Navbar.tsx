@@ -1,4 +1,6 @@
 
+
+
 import "./Navbar.css";
 
 function Navbar() {
@@ -9,21 +11,10 @@ function Navbar() {
       </a>
 
       <div className="navbar-links">
-        <a href="#work">
-          Work
-        </a>
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#skills">
-          Skills
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div className="navbar-status">

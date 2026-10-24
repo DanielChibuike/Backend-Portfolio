@@ -1,34 +1,195 @@
+
 .admin {
   min-height: 100vh;
-  background: #f7f7f5;
+  background: #faf9fd;
+  color: #242136;
 }
 
+/* Navigation */
+
 .admin-nav {
-  padding: 24px 6%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 6%;
+  border-bottom: 1px solid #eeeaf5;
   background: #fff;
 }
 
-.admin-nav h2 {
-  font-size: 20px;
-}
+/* Brand */
 
-.admin-nav div {
+.admin-brand {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  color: #171525;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  text-decoration: none;
 }
 
-.admin-nav button {
-  padding: 10px 14px;
-  border: 1px solid #111;
+.admin-brand span {
+  margin-left: -8px;
+  color: #7955c8;
+}
+
+.admin-brand small {
+  margin-left: 4px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #f1ebff;
+  color: #7955c8;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Navigation groups */
+
+.admin-nav-links,
+.admin-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-nav-links button,
+.admin-nav-actions button {
+  padding: 10px 13px;
+  border: 1px solid transparent;
+  border-radius: 7px;
   background: transparent;
+  color: #656273;
+  font: inherit;
+  font-size: 13px;
   cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.admin-nav button:hover {
-  background: #111;
-  color: #fff;
+/* Section navigation */
+
+.admin-nav-links button:hover {
+  background: #faf8ff;
+  color: #7955c8;
+}
+
+.admin-nav-links button.active {
+  border-color: #e9e0fa;
+  background: #f4efff;
+  color: #7955c8;
+  font-weight: 600;
+}
+
+/* View portfolio */
+
+.admin-nav-actions .view-portfolio {
+  border-color: #e9e5f5;
+  color: #514d61;
+}
+
+.admin-nav-actions .view-portfolio:hover {
+  border-color: #d8c9f5;
+  background: #faf8ff;
+  color: #7955c8;
+}
+
+/* Logout */
+
+.admin-nav-actions .logout-button {
+  border-color: #f0dede;
+  color: #a34d4d;
+}
+
+.admin-nav-actions .logout-button:hover {
+  border-color: #e7c4c4;
+  background: #fff5f5;
+  color: #8e3333;
+}
+
+/* Main content */
+
+.admin-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 36px 6%;
+}
+
+/* Keyboard accessibility */
+
+.admin-nav button:focus-visible,
+.admin-brand:focus-visible {
+  outline: 2px solid #7955c8;
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .admin-nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .admin-nav-links {
+    order: 3;
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid #f0edf6;
+  }
+
+  .admin-nav-actions {
+    margin-left: auto;
+  }
+
+  .admin-content {
+    padding: 28px 5%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .admin-nav {
+    padding: 18px 5%;
+  }
+
+  .admin-nav-links {
+    gap: 6px;
+    overflow-x: auto;
+  }
+
+  .admin-nav-links button {
+    flex-shrink: 0;
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+
+  .admin-nav-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admin-nav-actions button {
+    flex: 1;
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .admin-content {
+    padding: 24px 5%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-nav-links button,
+  .admin-nav-actions button {
+    transition: none;
+  }
 }

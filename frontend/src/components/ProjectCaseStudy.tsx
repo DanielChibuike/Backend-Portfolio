@@ -13,7 +13,7 @@ function ProjectCaseStudy({ project ,onClose}: Props) {
 
       <h2>{project.title}</h2>
 
-      <h3>The Problem</h3>
+      <h3>What it solves</h3>
       <p>{project.problemSolved}</p>
 
       <h3>Features</h3>

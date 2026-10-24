@@ -1,49 +1,207 @@
+
 .create-project {
-  max-width: 700px;
-  padding: 60px 6%;
+  width: 100%;
+  max-width: 820px;
+  color: #242136;
 }
 
-.create-project > p {
-  margin-bottom: 12px;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  color: #666;
-}
+/* Header */
 
-.create-project h2 {
+.create-project-header {
   margin-bottom: 32px;
-  font-size: 42px;
 }
+
+.create-project-label {
+  margin-bottom: 12px;
+  color: #7955c8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.create-project-header h2 {
+  margin-bottom: 12px;
+  color: #171525;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.create-project-description {
+  color: #777184;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Form */
 
 .create-project form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
+  padding: 32px;
+  border: 1px solid #e9e5f5;
+  border-radius: 14px;
+  background: #fff;
 }
 
-.create-project input,
-.create-project textarea {
+/* Fields */
+
+.project-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.project-field label {
+  color: #302b40;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-field input,
+.project-field textarea {
   width: 100%;
-  padding: 14px;
-  border: 1px solid #ddd;
-  font: inherit;
+  padding: 13px 14px;
+  border: 1px solid #e4dfef;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #242136;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.create-project textarea {
-  min-height: 120px;
+.project-field input {
+  min-height: 47px;
+}
+
+.project-field textarea {
+  min-height: 110px;
   resize: vertical;
 }
 
-.create-project button {
-  width: fit-content;
-  padding: 12px 20px;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
-  cursor: pointer;
+.project-field input::placeholder,
+.project-field textarea::placeholder {
+  color: #a29caf;
 }
 
-.create-project button:hover {
-  background: #fff;
-  color: #111;
+.project-field input:hover,
+.project-field textarea:hover {
+  border-color: #cfc3e7;
+}
+
+.project-field input:focus,
+.project-field textarea:focus {
+  border-color: #7955c8;
+  box-shadow: 0 0 0 3px rgba(121, 85, 200, 0.1);
+}
+
+.project-field small {
+  color: #888397;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Submit area */
+
+.create-project-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding-top: 8px;
+  border-top: 1px solid #f0edf6;
+}
+
+.create-project-submit button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 1px solid #7955c8;
+  border-radius: 8px;
+  background: #7955c8;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.create-project-submit button span {
+  font-size: 17px;
+  transition: transform 0.2s ease;
+}
+
+.create-project-submit button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #6541b0;
+}
+
+.create-project-submit button:hover:not(:disabled) span {
+  transform: translateX(3px);
+}
+
+.create-project-submit button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.create-project-submit button:focus-visible {
+  outline: 3px solid #c7b5f0;
+  outline-offset: 3px;
+}
+
+/* Feedback */
+
+.project-form-message {
+  color: #65577e;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .create-project-header {
+    margin-bottom: 26px;
+  }
+
+  .create-project form {
+    gap: 20px;
+    padding: 22px 18px;
+    border-radius: 11px;
+  }
+
+  .project-field input,
+  .project-field textarea {
+    font-size: 14px;
+  }
+
+  .create-project-submit button {
+    width: 100%;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-field input,
+  .project-field textarea,
+  .create-project-submit button,
+  .create-project-submit button span {
+    transition: none;
+  }
 }
